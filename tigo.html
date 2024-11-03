@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>AIRTEL</title>
+
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class=" topmenu left_menu">
+
+		</div>
+		<div class=" topmenu centered_menu">
+			TIGO PESA
+		</div>
+		<div class=" topmenu right_menu">
+    <a href="index.html" ><i class="fa fa-home fa-2x"></i></a>
+    </div>
+		 </nav>
+
+
+ <div class="main_body">
+
+
+  <div class="row parcel_form">
+
+ <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel  deep-orange darken-3">
+        <span class="white-text">
+          Your Details<br>
+           Name: <span id="rba_name"></span><br>
+           Phone: <span id="rba_phone"></span><br>
+           Region: <span id="rba_region"></span><br>
+
+        </span>
+        <br>
+        <a class="btn btn-small yellow darken-2" href="registration.html">Edit Details</a>
+      </div>
+    </div>
+  </div>
+
+<form id="data_form">
+           <input id="ba_name" name="ba_name"  type="hidden">
+           <input id="ba_phone" name="ba_phone"  type="hidden">
+           <input id="ba_region" name="ba_region"  type="hidden">
+           <input id="place" name="place" value="125HD"  type="hidden">
+
+
+
+
+
+        <!-- insert location details (gps) -->
+          <h1>LOCATION DETAILS</h1>
+
+
+      <div class="input-field col s12">
+          <span>Date</span><br>
+            <input id="sub_1_1" name="sub_1_1" placeholder="Date" type="date">
+
+        </div>
+
+          <div class="input-field col s12">
+          <span>Region</span><br>
+            <input id="sub_1_2" name="sub_1_2" placeholder="Region" type="text">
+
+        </div>
+          <div class="input-field col s12">
+          <span>Competitor </span><br>
+            <input id="sub_1_3" name="sub_1_3" placeholder="Competitor " type="text">
+
+        </div>
+          <div class="input-field col s12">
+          <span>Observed Activities</span><br>
+            <input id="sub_1_4" name="sub_1_4" placeholder="Observed Activities" type="text">
+        </div>
+
+
+        <div class="input-field col s12">
+          <span>Regions of Activity </span><br>
+            <input id="sub_1_5" name="sub_1_5" placeholder="Regions of Activity" type="text">
+        </div>
+
+
+
+         <div class="input-field col s12">
+          <span>Promotions/Offers</span><br>
+            <input id="sub_1_6" name="sub_1_6" placeholder="Promotions/Offers" type="text">
+        </div>
+
+        <h1>Current Float Management Practices and Challenges</h1>
+
+        <div class="input-field col s12">
+          <span>1. How do you currently manage float levels on a daily basis to ensure you can meet customer demand? </span><br>
+            <input id="sub_1_7" name="sub_1_7" placeholder="Phone Number " type="tel">
+        </div>
+
+
+        <div class="input-field col s12">
+          <span>2. Have you recently experienced float shortages?  </span><br>
+          <select name="sub_1_8" id="sub_1_8" style="display: block;">
+            <option value="">Select your answer</option>
+            <option id="yes" value="Boda Boda">YES</option>
+            <option id="no" value="Only Load">NO</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <span>2a. If so, how frequently does your float  shortages occur?</span><br>
+            <input id="sub_1_9" name="sub_1_9" placeholder="Your Answer" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>2b. What steps do you take to address your float  shortages?</span><br>
+            <input id="sub_1_10" name="sub_1_10" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>3. What challenges do you encounter in acquiring float on short notice?</span><br>
+            <input id="sub_1_11" name="sub_1_11" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>3a. How do you typically resolve these issues/challenges?</span><br>
+            <input id="sub_1_12" name="sub_1_12" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>4. Are there times when customer demand exceeds your available float?</span><br>
+            <input id="sub_1_13" name="sub_1_13" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>4a. If so, how do customers typically react, and how do you handle these situations?</span><br>
+            <input id="sub_1_14" name="sub_1_14" placeholder="Your Answer" type="text">
+        </div>
+
+        <h1>Real-Time Network Experiences</h1>
+
+        <div class="input-field col s12">
+          <span>1. How would you describe the reliability of the M-Pesa network during your working hours?</span><br>
+            <input id="sub_1_15" name="sub_1_15" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>2. Are there times of day when network issues are more common?</span><br>
+            <input id="sub_1_16" name="sub_1_16" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>3. What network issues have you recently experienced while processing M-Pesa transactions (e.g., system downtimes, slow loading times)?</span><br>
+            <input id="sub_1_17" name="sub_1_17" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>4. When the network is down or unreliable, what do you currently do to communicate with customers and minimize their frustration?</span><br>
+            <input id="sub_1_18" name="sub_1_18" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>5. Are there specific regions or areas where you notice network issues happening more frequently?</span><br>
+            <input id="sub_1_19" name="sub_1_19" placeholder="Your Answer" type="text">
+        </div>
+
+        <h1>Transaction Handling and Customer Service</h1>
+        <div class="input-field col s12">
+          <span>1. How efficient do you find the M-Pesa transaction process at the moment? </span><br>
+            <input id="sub_1_20" name="sub_1_20" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>2. Are there specific transactions (e.g., cash-in, cash-out, bill payments) that experience more issues than others?</span><br>
+            <input id="sub_1_21" name="sub_1_21" placeholder="Your Answer" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>3. Have you encountered recent cases of delayed or incomplete transactions?</span><br>
+          <select name="sub_1_22" id="sub_1_22" style="display: block;"  class="">
+            <option value="">Select your answer</option>
+            <option id="yes_22" class="yes" value="yes">Yes</option>
+            <option id="no_22" class="no" value="no">No</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <span>3a. How did you handle them, and what was the customer response?</span><br>
+            <input id="sub_1_23" name="sub_1_23" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>4. List any ongoing issues with Tigo Pesa transaction confirmations or receipts that impact customer satisfaction?</span><br>
+            <input id="sub_1_24" name="sub_1_24" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>5. How do you currently manage customer complaints related to transaction delays or errors?</span><br>
+            <input id="sub_1_25" name="sub_1_25" placeholder="Your Answer" type="text">
+        </div>
+
+        <h1>Improvements in Process and Support</h1>
+
+        <div class="input-field col s12">
+          <span>1. Based on your current experience, what improvements could Tigo Pesa make to help you manage float, network, or transaction challenges more effectively?</span><br>
+            <input id="sub_1_26" name="sub_1_26" placeholder="Your Answer" type="text">
+        </div>
+
+
+        <div class="input-field col s12">
+          <span>Notes</span><br>
+            <input id="sub_1_27" name="sub_1_27" placeholder="Your Answer" type="text">
+        </div>
+
+
+        <h1>Transaction Process and Customer Satisfaction</h1>
+
+        <div class="input-field col s12">
+          <span>1. Are there specific types of Tigo Pesa transactions (e.g., cash-in, cash-out, bill payments) that you find slower or more challenging to complete?</span><br>
+            <input id="sub_1_28" name="sub_1_28" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>2. How satisfied are you with the current speed and ease of Tigo Pesa transactions?</span><br>
+            <input id="sub_1_29" name="sub_1_29" placeholder="Your Answer" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>3. Do you feel that M-Pesa offers secure and reliable transactions, or have you experienced issues that affected your confidence in the service?</span><br>
+            <input id="sub_1_30" name="sub_1_30" placeholder="Your Answer" type="text">
+        </div>
+
+
+        <h1>Comparing to Competitors</h1>
+
+        <div class="input-field col s12">
+          <span>1. If you have used Airtel Money, how does your experience with Tigo Pesa compare, especially in terms of transaction speed, reliability, and availability?</span><br>
+            <input id="sub_1_31" name="sub_1_31" placeholder="Your Answer" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>2. What factors would make you more likely to choose Tigo Pesa over other services?</span><br>
+            <input id="sub_1_32" name="sub_1_32" placeholder="Your Answer" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>3. Are there specific features, promotions, or improvements you wish Tigo Pesa offered to make the service more attractive or reliable?</span><br>
+            <input id="sub_1_33" name="sub_1_33" placeholder="Your Answer" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>4. If you could suggest one improvement to make your experience with Tigo Pesa better, what would it be?</span><br>
+            <input id="sub_1_34" name="sub_1_34" placeholder="Your Answer" type="text">
+        </div>
+
+
+           <div class="input-field col s12 center_it">
+        <button id="branding_btn" class="btn-large  margin-bottom waves-effect waves-light pick_color">  Upload Information <i class="fa fa-send"></i></button>
+      </div>
+
+</form>
+
+
+
+
+
+
+  </div>
+
+ </div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/sweet.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/location.js"></script>
+<script type="text/javascript" src="js/display.js"></script>
+<script type="text/javascript" src="util/tigo.js"></script>
+
+
+<script type="text/javascript">
+
+  // unchecked radio button
+$(document).ready(function(){
+  $('.row-checked input[type="radio"]').click(function(){
+    var parentDiv = $(this).closest('.row-checked');
+    var name = $(this).attr('name');
+    parentDiv.find('input[type="radio"]').each(function(){
+      if($(this).attr('name') !== name) {
+        $(this).prop('checked', false);
+      }
+    });
+  });
+});
+
+
+app.prefill();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

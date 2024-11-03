@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>AIRTEL</title>
+
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class=" topmenu left_menu">
+
+		</div>
+		<div class=" topmenu centered_menu">
+			SUMMARY REPORTING
+		</div>
+		<div class=" topmenu right_menu">
+    <a href="index.html" ><i class="fa fa-home fa-2x"></i></a>
+    </div>
+		 </nav>
+
+
+ <div class="main_body">
+
+
+  <div class="row parcel_form">
+
+ <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel  deep-orange darken-3">
+        <span class="white-text">
+          Your Details<br>
+           Name: <span id="rba_name"></span><br>
+           Phone: <span id="rba_phone"></span><br>
+           Region: <span id="rba_region"></span><br>
+
+        </span>
+        <br>
+        <a class="btn btn-small yellow darken-2" href="registration.html">Edit Details</a>
+      </div>
+    </div>
+  </div>
+
+<form id="data_form">
+           <input id="ba_name" name="ba_name"  type="hidden">
+           <input id="ba_phone" name="ba_phone"  type="hidden">
+           <input id="ba_region" name="ba_region"  type="hidden">
+           <input id="place" name="place" value="DEALER"  type="hidden">
+
+
+
+        <!-- insert location details (gps) -->
+          <h1>LOCATION DETAILS</h1>
+
+
+      <div class="input-field col s12">
+          <span>Date</span><br>
+            <input id="sub_1_1" name="sub_1_1" placeholder="Date" type="date">
+
+        </div>
+
+          <div class="input-field col s12">
+          <span>Day of Activation</span><br>
+            <input id="sub_1_2" name="sub_1_2" placeholder="Day Of Activation" type="text">
+
+        </div>
+          <div class="input-field col s12">
+          <span>Region</span><br>
+            <input id="sub_1_3" name="sub_1_3" placeholder="Region" type="text">
+
+        </div>
+
+        <div class="input-field col s12">
+          <span>Location Covered </span><br>
+            <input id="sub_1_4" name="sub_1_4" placeholder="location covered" type="text">
+        </div>
+
+        <h1>Questionnaire</h1>
+
+         <div class="input-field col s12">
+          <span>G.A Report</span><br>
+            <input id="sub_1_5" name="sub_1_5" placeholder="G.A Report" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>New Airtel Money App Downloads</span><br>
+            <input id="sub_1_6" name="sub_1_6" placeholder="New Airtel Money App Downloads" type="text">
+
+        </div>
+
+        <div class="input-field col s12">
+          <span>Cash Mobile Device Sold</span><br>
+            <input id="sub_1_7" name="sub_1_7" placeholder="Cash Mobile Device Sold" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Prospect Device Loan</span><br>
+            <input id="sub_1_8" name="sub_1_8" placeholder="Prospect Device Loan" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Wakala Prospect / Created</span><br>
+            <input id="sub_1_9" name="sub_1_9" placeholder="Wakala Prospect / Created" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>New SSO Created</span><br>
+            <input id="sub_1_10" name="sub_1_10" placeholder="New SSO Created" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Sim Swap</span><br>
+            <input id="sub_1_11" name="sub_1_11" placeholder="Sim Swap" type="text">
+        </div>
+
+        <div class="input-field col s12 center_it">
+        <button id="branding_btn" class="btn-large  margin-bottom waves-effect waves-light pick_color">  Upload Information <i class="fa fa-send"></i></button>
+      </div>
+
+</form>
+
+  </div>
+
+ </div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/sweet.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!-- <script type="text/javascript" src="js/location.js"></script> -->
+<script type="text/javascript" src="util/summary.js"></script>
+
+
+<script type="text/javascript">
+
+  // unchecked radio button
+// $(document).ready(function(){
+//   $('.row-checked input[type="radio"]').click(function(){
+//     var parentDiv = $(this).closest('.row-checked');
+//     var name = $(this).attr('name');
+//     parentDiv.find('input[type="radio"]').each(function(){
+//       if($(this).attr('name') !== name) {
+//         $(this).prop('checked', false);
+//       }
+//     });
+//   });
+// });
+
+
+app.prefill();
+
+</script>
+</body>
+</html>

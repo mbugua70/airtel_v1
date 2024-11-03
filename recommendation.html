@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>AIRTEL</title>
+
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class=" topmenu left_menu">
+
+		</div>
+		<div class=" topmenu centered_menu">
+			RECOMMENDATION
+		</div>
+		<div class=" topmenu right_menu">
+    <a href="index.html" ><i class="fa fa-home fa-2x"></i></a>
+    </div>
+		 </nav>
+
+
+ <div class="main_body">
+
+
+  <div class="row parcel_form">
+
+ <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel  deep-orange darken-3">
+        <span class="white-text">
+          Your Details<br>
+           Name: <span id="rba_name"></span><br>
+           Phone: <span id="rba_phone"></span><br>
+           Region: <span id="rba_region"></span><br>
+
+        </span>
+        <br>
+        <a class="btn btn-small yellow darken-2" href="registration.html">Edit Details</a>
+      </div>
+    </div>
+  </div>
+
+<form id="data_form">
+           <input id="ba_name" name="ba_name"  type="hidden">
+           <input id="ba_phone" name="ba_phone"  type="hidden">
+           <input id="ba_region" name="ba_region"  type="hidden">
+           <input id="place" name="place" value="FEEDBACK"  type="hidden">
+
+
+
+
+
+        <!-- insert location details (gps) -->
+
+        <div class="input-field col s12">
+          <span>1. Category</span><br>
+            <input id="sub_1_1" name="sub_1_1" placeholder="" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>2. Observation</span><br>
+            <input id="sub_1_2" name="sub_1_2" placeholder="Observation" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>3. Actionable Recommendation</span><br>
+            <input id="sub_1_3" name="sub_1_3" placeholder="Actionable Recommendation" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>4. Expected Outcome</span><br>
+            <input id="sub_1_4" name="sub_1_4" placeholder="Actionable Recommendation" type="text">
+        </div>
+
+           <div class="input-field col s12 center_it">
+        <button id="branding_btn" class="btn-large  margin-bottom waves-effect waves-light pick_color">  Upload Information <i class="fa fa-send"></i></button>
+      </div>
+
+</form>
+
+
+
+
+
+
+  </div>
+
+ </div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/sweet.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/location.js"></script>
+<script type="text/javascript" src="util/recommend.js"></script>
+
+
+<script type="text/javascript">
+
+
+app.prefill();
+
+
+
+
+function validateForm4 ()
+    {
+        var shouldProceed=true;
+
+        return shouldProceed;
+    }
+
+</script>
+</body>
+</html>
